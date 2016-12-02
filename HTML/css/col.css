@@ -1,0 +1,1392 @@
+
+/*  SECTIONS  ============================================================================= */
+
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  GROUPING  ============================================================================= */
+
+
+.group:before,
+.group:after {
+    content:"";
+    display:table;
+}
+.group:after {
+    clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+/*  GRID COLUMN SETUP   ==================================================================== */
+
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+
+.col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
+
+
+/*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
+
+/* 11inch screen max - (black border) */
+@media only screen and ( max-width: 85em ) {
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+
+	/* navigation */
+	div#navmen {
+	  margin-left: 615px;
+	}
+
+	/* top side text (page title) in all pages except home.html */
+	div#insidecenterimg {
+		margin-top: 320px;
+	}
+
+	div#insidecenterimg h1 {
+		font-size: 35px;
+	}
+
+	div#insidecenterimg p a {
+		font-size: 15px;
+	}
+
+	div#insidecenterimg p a img {
+		height: 14px;
+	}
+
+	/* home.html */
+	header#homeheader {
+		/*border: 2px solid black;*/
+		height: 450px;
+	}
+
+	header#homeheader button {
+		margin-right: 40px;
+  		margin-top: 335px;
+		font-size: 24px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+
+	div#joinsection div.insidesections  {
+		margin-left: 30px;
+  		margin-right: 30px;
+	}
+
+	div#joinsection div.insidesections iframe {
+	  display: block;
+	  width: 100%; 
+	  height: 100%; 
+	}
+
+	/* aboutus.html */
+	header#aboutusheader {
+		/*border: 2px solid black;*/
+		height: 450px;
+	}
+
+
+	/* boardmembers.html */
+	header#boardheader {
+		/*border: 2px solid black;*/
+		height: 450px;
+	}
+
+
+	/* youthpprograms.html */
+	header#youthheader {
+		/*border: 2px solid black;*/
+		height: 450px;
+	}
+
+
+	/* programs.html */
+	header#programheader {
+		/*border: 2px solid black;*/
+		height: 450px;
+	}
+
+
+	/* testimonials.html */
+	header#testimonialheader {
+		/*border: 2px solid black;*/
+		height: 450px;
+	}
+
+
+	/* links.html */
+	header#linksheader {
+		/*border: 2px solid black;*/
+		height: 450px;
+	}
+
+
+	/* gallery.html */
+	header#galleryheader {
+		/*border: 2px solid black;*/
+		height: 450px;
+	}
+
+
+	/* contactus.html */
+	header#contactheader {
+		/*border: 2px solid black;*/
+		height: 450px;
+	}
+
+
+	/* sitemap.html */
+	header#sitemapheader {
+		/*border: 2px solid black;*/
+		height: 450px;
+	}
+
+	div#sitemapside button {
+	  font-size: 21px;
+	  padding-top: 10px;
+	  padding-bottom: 10px;
+	  width: 350px;
+	}
+
+	div#sitemapside button#fixbtm {
+	  margin-bottom: -10px;
+	  margin-left: -50px;
+	}
+
+
+	/* donate.html */
+	header#donateheader {
+		/*border: 2px solid black;*/
+		height: 450px;
+	}
+
+}
+
+/* different size screen - (yellow border) */
+@media only screen and ( max-width: 70em ) {
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+
+	/* navigation */
+	div#navmen {
+	  margin-left: 415px;
+	}
+
+	#nav > ul > li > a {
+		font-size: 17px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	/* top side text (page title) in all pages except home.html */
+	div#insidecenterimg {
+		margin-top: 275px;
+	}
+
+	div#insidecenterimg h1 {
+		font-size: 30px;
+	}
+
+	div#insidecenterimg p a {
+		font-size: 14px;
+	}
+
+	div#insidecenterimg p a img {
+		height: 13px;
+	}
+
+	/* home.html */
+	header#homeheader {
+		/*border: 2px solid yellow;*/
+		height: 370px;
+	}
+
+	header#homeheader button {
+		margin-right: 35px;
+  		margin-top: 280px;
+		font-size: 24px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+
+	div#joinsection div.insidesections h3 {
+	  padding-top: 5px;
+	}
+
+	div#joinsection div.insidesections h3.homeh3 {
+	  padding-top: 60px;
+	}
+
+	div#joinsection div.insidesections form#homeform button {
+		margin-top: 5px;
+	}
+
+	div#joinsection div.insidesections iframe {
+	  display: block;
+	  width: 100%; 
+	  height: 100%; 
+	  border: none;
+	  overflow: hidden;
+	  margin-left: 0px;
+	}
+
+	/* aboutus.html */
+	header#aboutusheader {
+		/*border: 2px solid yellow;*/
+		height: 370px;
+	}
+
+
+	/* boardmembers.html */
+	header#boardheader {
+		/*border: 2px solid yellow;
+		height: 370px;*/
+	}
+
+
+	/* youthpprograms.html */
+	header#youthheader {
+		/*border: 2px solid yellow;*/
+		height: 370px;
+	}
+
+
+	/* programs.html */
+	header#programheader {
+		/*border: 2px solid yellow;*/
+		height: 370px;
+	}
+
+
+	/* testimonials.html */
+	header#testimonialheader {
+		/*border: 2px solid yellow;*/
+		height: 370px;
+	}
+
+
+	/* links.html */
+	header#linksheader {
+		/*border: 2px solid yellow;*/
+		height: 370px;
+	}
+
+
+	/* gallery.html */
+	header#galleryheader {
+		/*border: 2px solid yellow;*/
+		height: 370px;
+	}
+
+
+	/* contactus.html */
+	header#contactheader {
+		/*border: 2px solid yellow;*/
+		height: 370px;
+	}
+
+
+	/* sitemap.html */
+	header#sitemapheader {
+		/*border: 2px solid yellow;*/
+		height: 370px;
+	}
+
+	div#sitemapside button {
+	  font-size: 20px;
+	  padding-top: 8px;
+	  padding-bottom: 8px;
+	  width: 300px;
+	}
+
+	div#sitemapside button#fixbtm {
+	  margin-bottom: 0px;
+	  margin-left: -40px;
+	}
+
+	/* donate.html */
+	header#donateheader {
+		/*border: 2px solid yellow;*/
+		height: 370px;
+	}
+
+	div#donationtitle {
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+
+}
+
+/* big screen tablet - (red border) */
+@media only screen and ( max-width: 62.5em ) {
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+
+	/* navigation */
+	div#navmen {
+	  margin-left: 365px;
+	}
+
+	#nav > ul > li > a {
+		padding-left: 15px;
+	  	padding-right: 15px;
+	}
+
+	/* top side text (page title) in all pages except home.html */
+	div#insidecenterimg {
+		margin-top: 215px;
+	}
+
+	div#insidecenterimg h1 {
+		font-size: 25px;
+	}
+
+	div#insidecenterimg p a {
+		font-size: 13px;
+	}
+
+	div#insidecenterimg p a img {
+		height: 12px;
+	}
+
+	/* home.html */
+	header#homeheader {
+		/*border: 2px solid red;*/
+		height: 300px;
+	}
+
+	header#homeheader button {
+		margin-top: 230px;
+		margin-right: 30px;
+		font-size: 20px;
+		padding-top: 7px;
+		padding-bottom: 7px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	div#joinsection div.insidesections {
+	  margin-left: 14px;
+	  margin-right: 14px;
+	}
+
+	div#joinsection div.insidesections form#homeform button {
+		margin-top: 5px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+
+	/* aboutus.html */
+	header#aboutusheader {
+		/*border: 2px solid red;*/
+		height: 300px;
+	}
+
+
+	/* boardmembers.html */
+	header#boardheader {
+		/*border: 2px solid red;*/
+		height: 300px;
+	}
+
+	div#bmtopcontent div.insideboardmemeber {
+	  width: 250px;
+	}
+
+	div#bmtopcontent div.insideboardmemeber figure {
+	  clear: both;
+	  margin: auto;
+	  margin-bottom: 0px;
+	  text-align: center;
+	  height: 275px;
+	  margin-top: 25px;
+	}
+
+	div#bmtopcontent div.insideboardmemeber figure img {
+	  box-shadow: 1px 1px 2px #cccccc;
+	  margin-left: 70px;
+	}
+
+	div#bmtopcontent div.insideboardmemeber figure figcaption {
+	  clear: both;
+	  font-size: 18px;
+	  width: 175px;
+	  margin-top: 5%;
+	  margin-left: 0px;
+	}
+
+	div#bmtopcontent div.insideboardmemeber figure figcaption p {
+	  line-height: 23px;
+	  color: #28a2c3;
+	  font-weight: 500;
+	  margin-left: 0px;
+	}
+
+	div#bmtopcontent div.insideboardmemeber figure figcaption p span {
+	  color: #342E37;
+	  font-weight: 300;
+	}
+
+	/* youthpprograms.html */
+	header#youthheader {
+		/*border: 2px solid red;*/
+		height: 300px;
+	}
+
+
+	/* programs.html */
+	header#programheader {
+		/*border: 2px solid red;*/
+		height: 300px;
+	}
+
+
+	/* testimonials.html */
+	header#testimonialheader {
+		/*border: 2px solid red;*/
+		height: 300px;	
+	}
+
+
+	/* links.html */
+	header#linksheader {
+		/*border: 2px solid red;*/
+		height: 300px;
+	}
+
+
+	/* gallery.html */
+	header#galleryheader {
+		/*border: 2px solid red;*/
+		height: 300px;
+	}
+
+
+	/* contactus.html */
+	header#contactheader {
+		/*border: 2px solid red;*/
+		height: 300px;
+	}
+
+	div#bmbottomcontent iframe {
+	  margin-left: 35px;
+	  width: 450px;
+	  height: 350px;
+	}
+
+	div#bmbottomcontent p {
+	  margin-top: 45px;
+	  font-size: 17px;
+	}
+
+	div#bmbottomcontent p#bottomlastline {
+	  font-size: 14px;
+	}
+
+
+	/* sitemap.html */
+	header#sitemapheader {
+		/*border: 2px solid red;*/
+		height: 300px;
+	}
+
+	div#sitemapside button {
+	  font-size: 19px;
+	  padding-top: 8px;
+	  padding-bottom: 8px;
+	  width: 250px;
+	}
+
+	div#sitemapside button#fixbtm {
+	  margin-bottom: 0px;
+	  margin-left: -35px;
+	}	
+
+
+	/* donate.html */
+	header#donateheader {
+		/*border: 2px solid red;*/
+		height: 300px;
+	}
+
+	div#donationtitle {
+		padding-right: 40px;
+		padding-left: 40px;
+	}
+
+
+}
+
+
+/* small screen tablet - (green border) */
+@media only screen and ( max-width: 42.5em ) {
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+
+	/* second option navigation */
+	img#imagelogo {
+		clear: both;
+		float: right;
+		width: 40px;
+		margin-left: 220px;
+	}
+
+	#nav {
+	    position: absolute;
+	    margin-left: -115px;
+	    margin-top: -15px;
+	}
+
+	#nav > a {
+	    width: 3.125em; /* 50 */
+	    height: 3.125em; /* 50 */
+	    text-align: left;
+	    text-indent: -9999px;
+	}
+
+	#nav > a:before, #nav > a:after {
+	    position: absolute;
+	    border: 2px solid #fff;
+	    top: 35%;
+	    left: 25%;
+	    right: 25%;
+	    content: '';
+	}
+
+	#nav > a:after {
+	    top: 60%;
+	}
+
+	#nav:not( :target ) > a:first-of-type, #nav:target > a:last-of-type {
+	    display: block;
+	}
+
+	/* first level */
+	#nav > ul {
+	    height: auto;
+	    width: 175px;
+	    display: none;
+	    position: absolute;
+	    margin-left: -140px;
+	}
+
+	#nav:target > ul {
+	    display: block;
+	    background-color: rgba(0, 0, 0, 0.2);
+	}
+
+
+	#nav > ul > li {
+	    width: 100%;
+	    float: none;
+	    background-color: rgba(0, 0, 0, 0.5);
+	}
+
+	#nav > ul > li > a {
+	    height: auto;
+	    text-align: left;
+	    padding: 0 0.833em; /* 20 (24) */
+
+	}
+
+	#nav > ul > li:not( :last-child ) > a {
+	    border-right: none;
+	}
+
+	#nav > ul > li:hover > a, #nav > ul:not( :hover ) > li.active > a {
+		border: none;
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+
+	/* second level */
+	#nav li ul {
+	    position: static;
+	    padding-left: 15px;
+	    padding-top: 0;
+	}
+
+	#nav li ul a {
+		font-size: 16px;
+	}
+	/* ends here */
+
+	/* top side text (page title) in all pages except home.html */
+	div#insidecenterimg {
+		margin-top: 170px;
+	}
+
+	div#insidecenterimg h1 {
+		font-size: 20px;
+	}
+
+	div#insidecenterimg p a {
+		font-size: 12px;
+	}
+
+	div#insidecenterimg p a img {
+		height: 11px;
+	}
+
+	/* home.html */
+	header#homeheader {
+		/*border: 2px solid green;*/
+		height: 225px;
+	}
+
+	header#homeheader button {
+		margin-top: 105px;
+		margin-right: 20px;
+		font-size: 18px;
+		padding-top: 7px;
+		padding-bottom: 7px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	div#homeprogram h2 {
+		font-size: 19px;
+		margin-bottom: 5px;
+	}
+
+	img.homeprogramimg {
+		width: 105px;
+	}
+
+	div#homeprogram figure figcaption {
+		font-size: 15px;
+	}
+
+	div#homeprogram button {
+		font-size: 17px;
+		padding-top: 6px;
+  		padding-bottom: 6px;
+  		margin-bottom: 5px;
+	}
+
+	div#joinsection {
+	  padding: 17px;
+	}
+
+	div#joinsection h2 {
+	  font-size: 19px;
+	}
+
+	div#joinsection div.insidesections {
+	  padding: 15px;
+	  height: 250px;
+	  margin-left: 12px;
+	  margin-right: 12px;
+	}
+
+	div#joinsection div.insidesections h3 {
+	  padding-top: 5px;
+	}
+
+	div#joinsection div.insidesections h3.homeh3 {
+	  padding-top: 60px;
+	}
+
+	div#joinsection div.insidesections form#homeform input {
+		width: 100%;
+	}
+
+	div#joinsection div.insidesections button {
+		height: 45px;
+	}
+
+	div#joinsection div.insidesections iframe {
+	  display: block;
+	  width: 100%; 
+	  height: 100%; 
+	  border: none;
+	  overflow: hidden;
+	}
+
+	/* aboutus.html */
+	header#aboutusheader {
+		/*border: 2px solid green;*/
+		height: 225px;
+	}
+
+
+	/* boardmembers.html */
+	header#boardheader {
+		/*border: 2px solid green;*/
+		height: 225px;
+	}
+
+	div#bmtopcontent div.insideboardmemeber {
+	  width: 250px;
+	}
+
+	div#bmtopcontent div.insideboardmemeber figure {
+	  clear: both;
+	  margin: auto;
+	  margin-bottom: 0px;
+	  text-align: center;
+	  height: 275px;
+	  margin-top: 25px;
+	}
+
+	div#bmtopcontent div.insideboardmemeber figure img {
+	  box-shadow: 1px 1px 2px #cccccc;
+	  margin-left: 5px;
+	}
+
+	div#bmtopcontent div.insideboardmemeber figure figcaption {
+	  clear: both;
+	  font-size: 16px;
+	  width: 175px;
+	  margin-top: 5%;
+	  padding: 10px;
+	}
+
+	div#bmtopcontent div.insideboardmemeber figure figcaption p {
+	  line-height: 23px;
+	  color: #28a2c3;
+	  font-weight: 500;
+	  margin-left: -40px;
+	}
+
+	div#bmtopcontent div.insideboardmemeber figure figcaption p span {
+	  color: #342E37;
+	  font-weight: 300;
+	  font-size: 15px;
+	  padding-right: 10px;
+	}
+
+
+	/* youthpprograms.html */
+	header#youthheader {
+		/*border: 2px solid green;*/
+		height: 225px;
+	}
+
+
+	/* programs.html */
+	header#programheader {
+		/*border: 2px solid green;*/
+		height: 225px;
+	}
+
+
+	/* testimonials.html */
+	header#testimonialheader {
+		/*border: 2px solid green;*/
+		height: 225px;
+	}
+
+
+	/* links.html */
+	header#linksheader {
+		/*border: 2px solid green;*/
+		height: 225px;
+	}
+
+
+	/* gallery.html */
+	header#galleryheader {
+		/*border: 2px solid green;*/
+		height: 225px;
+	}
+
+
+	/* contactus.html */
+	header#contactheader {
+		/*border: 2px solid green;*/
+		height: 225px;
+	}
+
+	div#bmbottomcontent iframe {
+	  margin-left: 10px;
+	  width: 320px;
+	  height: 265px;
+	  margin-top: 10px;
+	}
+
+	div#bmbottomcontent p {
+	  margin-top: 5px;
+	  font-size: 14px;
+	}
+
+	div#bmbottomcontent p#bottomlastline {
+	  font-size: 11px;
+	}
+
+
+	/* sitemap.html */
+	header#sitemapheader {
+		/*border: 2px solid green;*/
+		height: 225px;
+	}
+
+	div#sitemapside button {
+	  font-size: 18px;
+	  padding-top: 6px;
+	  padding-bottom: 6px;
+	  width: 200px;
+	}
+
+	div#sitemapside button#fixbtm {
+	  margin-bottom: 0px;
+	  margin-left: -25px;
+	}
+
+
+	/* donate.html */
+	header#donateheader {
+		/*border: 2px solid green;*/
+		height: 225px;
+	}
+
+	div#donationtitle {
+		padding-right: 50px;
+		padding-left: 50px;
+	}
+
+	div#donationtitle h2 {
+		font-size: 20px;
+		line-height: 25px;
+	}
+
+	div#donationtitle p {
+		font-size: 17px;
+	}
+
+
+}
+
+@media only screen and ( max-width: 570px ) {
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+
+	/* second option navigation */
+	img#imagelogo {
+		clear: both;
+		float: right;
+		width: 40px;
+		margin-left: 120px;
+	}
+
+	#nav {
+	    position: absolute;
+	    margin-left: -105px;
+	    margin-top: -15px;
+	}
+
+	/* top side text (page title) in all pages except home.html */
+	div#insidecenterimg {
+		margin-top: 130px;
+	}
+
+	/* home.html */
+	header#homeheader button {
+		margin-top: 70px;
+	}
+
+}
+
+
+/* big smartphone - (pink border) */
+@media only screen and (max-width: 480px) {
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+
+	/* second option navigation */
+	img#imagelogo {
+		width: 35px;
+		margin-left: 54px;
+	}
+
+	#nav {
+	    position: absolute;
+	    margin-left: -105px;
+	    margin-top: -17px;
+	}
+
+	footer {
+		padding-left: 25px;
+		padding-right: 25px;
+		line-height: 22px;
+	}
+
+	/* top side text (page title) in all pages except home.html */
+	div#insidecenterimg {
+		margin-top: 100px;
+	}
+
+	div#insidecenterimg h1 {
+		font-size: 15px;
+	}
+
+	div#insidecenterimg p a {
+		font-size: 11px;
+	}
+
+	div#insidecenterimg p a img {
+		font-size: 10px;
+	}
+
+	/* home.html */
+	header#homeheader {
+		/*border: 2px solid pink;*/
+		height: 155px;
+	}
+
+	header#homeheader button {
+		margin-top: 58px;
+		margin-right: 7px;
+		font-size: 14px;
+		padding-top: 4px;
+		padding-bottom: 4px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	div#homeprogram figure.floatleft {
+		float: left;
+		margin-left: 80px;
+	}
+
+	div#homeprogram figure.floatright {
+		float: right;
+		margin-right: 95px;
+		margin-top: -182px;
+	}
+
+	img.homeprogramimg {
+		width: 125px;
+	}
+
+	div#joinsection {
+	  padding-left: 50px;
+	  padding-right: 50px;
+	}
+
+	div#joinsection h2 {
+		padding-bottom: 5px;
+	}
+
+	div#joinsection div.insidesections {
+		margin-bottom: 10px;
+	}
+
+	div#joinsection div.insidesections h3 {
+		padding-bottom: 20px;
+		padding-top: 20px;
+	}
+
+	div#joinsection div.insidesections form#homeform input {
+		width: auto;
+	}
+
+	div#joinsection div.insidesections form#homeform button {
+		margin-top: -4px;
+		padding-top: 7px;
+		padding-bottom: 7px;
+	}
+
+	div#joinsection div.insidesections iframe {
+	  margin-left: 10px;
+	  margin-top: -5px;
+	}
+
+
+	/* aboutus.html */
+	header#aboutusheader {
+		/*border: 2px solid pink;*/
+		height: 155px;
+	}
+
+
+	/* boardmembers.html */
+	header#boardheader {
+		/*border: 2px solid pink;*/
+		height: 155px;
+	}
+
+	div#bmtopcontent div.insideboardmemeber {
+	  width: 100%;
+	}
+
+	div#bmtopcontent div.insideboardmemeber figure {
+	  clear: both;
+	  margin: auto;
+	  margin-bottom: 0px;
+	  text-align: center;
+	  height: 150px;
+	  margin-top: 15px;
+	  margin-left: 50px;
+	}
+
+	div#bmtopcontent div.insideboardmemeber figure img {
+	  box-shadow: 1px 1px 2px #cccccc;
+	  margin-left: 5px;
+	  width: 125px;
+	}
+
+	div#bmtopcontent div.insideboardmemeber figure figcaption {
+	  clear: both;
+	  font-size: 16px;
+	  width: 175px;
+	  margin-top: 3%;
+	  padding: 10px;
+	}
+
+	div#bmtopcontent div.insideboardmemeber figure figcaption p {
+	  line-height: 23px;
+	  color: #28a2c3;
+	  font-weight: 500;
+	  margin-left: 10px;
+	  text-align: left;
+	}
+
+	div#bmtopcontent div.insideboardmemeber figure figcaption p span {
+	  color: #342E37;
+	  font-weight: 300;
+	  font-size: 15px;
+	}
+
+
+	/* youthpprograms.html */
+	header#youthheader {
+		/*border: 2px solid pink;*/
+		height: 155px;
+	}
+
+
+	/* programs.html */
+	header#programheader {
+		/*border: 2px solid pink;*/
+		height: 155px;
+	}
+
+
+	/* testimonials.html */
+	header#testimonialheader {
+		/*border: 2px solid pink;*/
+		height: 155px;
+	}
+
+
+	/* links.html */
+	header#linksheader {
+		/*border: 2px solid pink;*/
+		height: 155px;
+	}
+
+
+	/* gallery.html */
+	header#galleryheader {
+		/*border: 2px solid pink;*/
+		height: 155px;
+	}
+
+	div#gallerycontent h2 {
+		margin-top: 10px;
+	}
+
+	div#gallerycontent div.textonhome {
+		margin-top: 10px;
+	}
+
+
+	/* contactus.html */
+	header#contactheader {
+		/*border: 2px solid pink;*/
+		height: 155px;
+	}
+
+	div#bmbottomcontent iframe {
+	  margin-left: 0px;
+	  width: 375px;
+	  height: 250px;
+	  margin-top: 10px;
+	}
+
+	div#bmbottomcontent p {
+	  margin-top: 5px;
+	  font-size: 14px;
+	}
+
+	div#bmbottomcontent p#bottomlastline {
+	  font-size: 11px;
+	}
+
+
+	/* sitemap.html */
+	header#sitemapheader {
+		/*border: 2px solid pink;*/
+		height: 155px;
+	}
+
+	div#sitemapside button {
+	  font-size: 17px;
+	  padding-top: 6px;
+	  padding-bottom: 6px;
+	  width: 300px;
+	  margin-bottom: 10px;
+	}
+
+	div#sitemapside button#fixbtm {
+	  margin-bottom: 0px;
+	  margin-left: -1px;
+	}
+
+
+
+	/* donate.html */
+	header#donateheader {
+		/*border: 2px solid pink;*/
+		height: 155px;
+	}
+
+	div#donationtitle h2 {
+		font-size: 18px;
+	}
+
+	div#donationtitle p {
+		font-size: 16px;
+	}
+
+	input.donately-btn {
+		margin-left: 115px;
+	}
+
+}
+
+/* smaller smartphone - (purple border) */
+@media only screen and (max-width: 400px) {
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+
+	/* second option navigation */
+	div#navmen {
+		margin-top: -7px;
+	}
+
+	img#imagelogo {
+		margin-left: -14px;
+	}
+
+	#nav {
+	    position: absolute;
+	    margin-left: -105px;
+	    margin-top: -17px;
+	}
+
+	/*responsive navigation */
+	/*ul.topnav li:last-child img {
+		width: 25px;
+		margin-right: -150px;
+	}*/
+
+	/* top side text (page title) in all pages except home.html */
+	div#insidecenterimg {
+		margin-top: 87px;
+	}
+
+	div#insidecenterimg h1 {
+		font-size: 15px;
+	}
+
+	div#insidecenterimg p a {
+		font-size: 10px;
+	}
+
+	div#insidecenterimg p a img {
+		height: 9px;
+	}
+
+	/* home.html */
+	header#homeheader {
+		/*border: 2px solid purple;*/
+		height: 130px;
+	}
+
+	header#homeheader button {
+		margin-top: 45px;
+		margin-right: 7px;
+		font-size: 13px;
+		padding-top: 3px;
+		padding-bottom: 3px;
+		padding-left: 13px;
+		padding-right: 13px;
+	}
+
+	div#homeprogram figure.floatleft {
+		float: left;
+		margin-left: 60px;
+	}
+
+	div#homeprogram figure.floatright {
+		float: right;
+		margin-right: 70px;
+		margin-top: -166px;
+	}
+
+	img.homeprogramimg {
+		width: 110px;
+	}
+
+	div#joinsection div.insidesections form#homeform button {
+		margin-top: 5px;
+		padding-top: 4px;
+		padding-bottom: 4px;
+	}
+
+	div#joinsection div.insidesections iframe {
+	  margin-left: 0px;
+	  margin-top: -5px;
+	}
+
+	/* aboutus.html */
+	header#aboutusheader {
+		/*border: 2px solid purple;*/
+		height: 130px;
+	}
+
+
+	/* boardmembers.html */
+	header#boardheader {
+		/*border: 2px solid purple;*/
+		height: 130px;
+	}
+
+	div#bmtopcontent div.insideboardmemeber {
+	  width: 100%;
+	}
+
+	div#bmtopcontent div.insideboardmemeber figure {
+	  clear: both;
+	  margin: auto;
+	  margin-bottom: 0px;
+	  text-align: center;
+	  height: 150px;
+	  margin-top: 15px;
+	  margin-left: 30px;
+	}
+
+	div#bmtopcontent div.insideboardmemeber figure img {
+	  box-shadow: 1px 1px 2px #cccccc;
+	  margin-left: 5px;
+	}
+
+	div#bmtopcontent div.insideboardmemeber figure figcaption {
+	  clear: both;
+	  font-size: 16px;
+	  width: 175px;
+	  margin-top: 3%;
+	  padding: 10px;
+	}
+
+	div#bmtopcontent div.insideboardmemeber figure figcaption p {
+	  line-height: 23px;
+	  color: #28a2c3;
+	  font-weight: 500;
+	  margin-left: 10px;
+	  text-align: left;
+	}
+
+	div#bmtopcontent div.insideboardmemeber figure figcaption p span {
+	  color: #342E37;
+	  font-weight: 300;
+	  font-size: 15px;
+	}
+
+
+	/* youthpprograms.html */
+	header#youthheader {
+		/*border: 2px solid purple;*/
+		height: 130px;
+	}
+
+
+	/* programs.html */
+	header#programheader {
+		/*border: 2px solid purple;*/
+		height: 130px;
+	}
+
+
+	/* testimonials.html */
+	header#testimonialheader {
+		/*border: 2px solid purple;*/
+		height: 130px;
+	}
+
+
+	/* links.html */
+	header#linksheader {
+		/*border: 2px solid purple;*/
+		height: 130px;
+	}
+
+
+	/* gallery.html */
+	header#galleryheader {
+		/*border: 2px solid purple;*/
+		height: 130px;
+	}
+
+
+	/* contactus.html */
+	header#contactheader {
+		/*border: 2px solid purple;*/
+		height: 130px;
+	}
+
+
+	/* sitemap.html */
+	header#sitemapheader {
+		/*border: 2px solid purple;*/
+		height: 130px;
+	}
+
+	div#sitemapside button {
+	  font-size: 16px;
+	  padding-top: 6px;
+	  padding-bottom: 6px;
+	  width: 300px;
+	}
+
+	div#sitemapside button#fixbtm {
+	  margin-bottom: 3px;
+	  margin-left: 0px;
+	}
+
+
+	/* donate.html */
+	header#donateheader {
+		/*border: 2px solid purple;*/
+		height: 130px;
+	}
+
+	input.donately-btn {
+		margin-left: 85px;
+	}
+
+
+
+
+
+}
